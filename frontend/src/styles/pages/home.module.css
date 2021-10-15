@@ -1,0 +1,36 @@
+.container{
+    height: 100vh;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.container section{
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6.25rem;
+    align-content: center;
+}
+@media (max-width:375px){
+    .container{
+    
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 10% 90%;
+        align-content: center;
+        flex-direction: column;
+        max-width: 375px;
+        margin-top: 0.01rem;
+    }
+    .challengeBox{
+        grid-row-start: 2;
+    
+    }
+    .profile{
+        grid-row-start: 1;
+        margin-top: 1rem;
+        
+    }
+}
